@@ -1,12 +1,9 @@
-// https://i.ibb.co/1mvJJvD/project3.png
-// https://i.ibb.co/Y2JNxtW/project2.png
-// https://i.ibb.co/GnpSRtn/project1.png
 
 const Project = () => {
   return (
-    <section id="project" className="bg-[#272727] py-10">
+    <section id="projects" className="bg-[#272727] py-10">
       <h2 className=" text-6xl font-bold text-center text-white py-8  ">Projects</h2>
-      <div className=" grid grid-cols-3 gap-5 mx-10 my-10">
+      <div className=" grid lg:grid-cols-3 md:grid-cols-2  gap-5 mx-10 my-10">
         <div className=" bg-[#fc8d3f] p-4 rounded-lg">
           <img src="https://i.ibb.co/1mvJJvD/project3.png" className=" rounded-lg object-cover mb-2 w-full h-40" alt="" />
           <h1 className=" text-xl font-bold ">EverNest</h1>
