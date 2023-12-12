@@ -19,12 +19,12 @@ const Navbar = () => {
      },[])
      return (
       
-          <nav className={`px-10 fixed w-full py-2   duration-300 left-0 top-0 z-[999] ${ sticky ? " bg-[#ffffff]  text-gray-900 shadow-lg duration-300": ' lg:py-0'}`}>
+          <nav className={`px-10 fixed w-full py-2  duration-300 left-0 top-0 z-[999] ${ sticky ? " bg-[#ffffff]  text-gray-900 shadow-lg ": ' md:py-0'}`}>
                <div className=" flex items-center justify-between">
                     <div>
                          <h2 className=" text-4xl uppercase text-[#fe954c] font-bold">TAJ<span className=" text-[#fe954c]">UL</span></h2>
                     </div>
-                    <div className=" bg-white p-2 px-8  rounded-bl-full rounded-br-full  text-gray-900 md:block hidden font-medium ">
+                    <div className=" bg-white p-2 px-8  rounded-bl-full lg:rounded-br-full  text-gray-900 md:block hidden font-medium ">
                          <ul className=" flex uppercase items-center gap-1 py-2 text-lg">
                               {
                               menuLinks?.map((menu,i)=>(
@@ -35,13 +35,13 @@ const Navbar = () => {
                               }
                          </ul>
                     </div>
-                    <div onClick={()=>setOpen(!open)} className={`z-[998] text-3xl ${open? "text-gray-900" : "text-gray-900"} md:hidden`}>
+                    <div onClick={()=>setOpen(!open)} className={`z-[998] text-3xl ${open? "text-gray-900 " : "text-gray-400"} md:hidden`}>
                          {
                               open ? <IoClose className=" " /> : <IoMenu className=" " />
                          }
                     
                     </div>
-                    <div className={`md:hidden text-gray-900 absolute w-2/3 h-screen px-7 py-2 font-medium bg-[#fff8f3] duration-300 top-0 ${open ? "right-0": "right-[-100%]"}`}>
+                    <div className={`md:hidden text-gray-900 absolute w-2/3 h-screen px-7 py-2 font-medium bg-[#fff8f3] top-0 ${open ? "right-0": "right-[-100%]"}`}>
                          <ul className=" flex uppercase flex-col justify-center h-full gap-10 py-2 text-lg">
                            {
                               menuLinks?.map((menu,i)=>(
