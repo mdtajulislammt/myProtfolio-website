@@ -3,9 +3,9 @@ import { IoLogoGithub } from "react-icons/io5";
 
 const Contact = () => {
      return (
-          <section id="contact" className=" bg-[#fc8d3f] px-10 pb-14">
+          <section id="contact" className=" bg-[#fc8d3f] px-10 pb-14 pt-[550px]">
               <h2 className=" text-5xl  font-bold text-center py-8">Contact Me</h2> 
-              <div className=" flex justify-between ">
+              <div className=" lg:flex  justify-between ">
                <div className=" flex-1">
                     <h2 className=" text-3xl font-semibold  ">Let's Connect  . . . </h2>
                     <div className=" flex items-center gap-5">

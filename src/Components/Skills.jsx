@@ -11,7 +11,7 @@ const Skills = () => {
       <div>
         <h1 className=" text-5xl font-bold text-center py-5 pb-10">My Skills</h1>
       </div>
-      <div className=" grid grid-cols-5">
+      <div className=" grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 ">
         <div className=" py-4">
           <FaHtml5 className=" text-9xl mx-auto" />
           <p className="text-center font-semibold text-xl">Advance</p>
