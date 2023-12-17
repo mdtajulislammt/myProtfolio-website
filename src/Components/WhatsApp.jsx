@@ -7,4 +7,4 @@ const WhatsApp = () => {
      );
 };
 
-export default WhatsApp;
+export default WhatsApp; 
